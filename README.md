@@ -1,5 +1,6 @@
-This is a front-end Movie  clooned with firebase backend.It uses TMDB API for all the data and uses firebase authentication to give login functionality.
-User data can be stored in React-front end nd a firebase to save data.
+This is a front-end Movie  cloned with firebase for backend.
+It uses TMDB API for all the data and uses firebase authentication to give login functionality.
+User data can be stored in React-front end and  firebase to save data.
 
 It also uses firestore (cloud storage) together with firebase to store  data.
 
