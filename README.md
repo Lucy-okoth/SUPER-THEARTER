@@ -1,3 +1,15 @@
+This is a front-end Movie  clooned with firebase backend.It uses TMDB API for all the data and uses firebase authentication to give login functionality.
+User data can be stored in React-front end nd a firebase to save data.
+
+It also uses firestore (cloud storage) together with firebase to store  data.
+
+It uses tailwind-CSS in front end for styling.
+The project will be deployed using Firebase hosting.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
