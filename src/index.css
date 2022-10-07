@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* base styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 * {
-  background-color: black;
-  font-family: "Quicksand";
-  
+  background-color: #000000;
+  font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
