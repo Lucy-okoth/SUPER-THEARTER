@@ -1,26 +1,30 @@
-import React, { useEffect, useState } from 'react'
-import requests from '../Requests'
-import axios from 'axios'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import requests from '../Requests';
 
 const Main = () => {
+  const [movies, setMovies] = useState([]);
 
+  const movie = movies[Math.floor(Math.random() * movies.length)];
 
-    const [movies,setMovies] = useState([])
+  useEffect(() => {
+    axios.get(requests.requestPopular).then((response) => {
+      setMovies(response.data.results);
+    });
+  }, []);
+   console.log(movie);
 
+  const truncateString = (str, num) => {
+    if (str?.length > num) {
+      return str.slice(0, num) + '...';
+    } else {
+      return str;
+    }
+  };
 
-    const movie = movies[Math.random() * movies.length]
-
-    useEffect (() => {
-      axios.get (requests.requestRating).then ((response) => {
-        setMovies (response.data.results)
-      });
-
-    },[]);
-
-    console.log (movie);
   return (
     <div>Main</div>
   )
 }
 
-export default Main
+export default Main;

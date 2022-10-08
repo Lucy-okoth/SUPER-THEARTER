@@ -6,7 +6,7 @@ function Home() {
     <>
       <Main />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
