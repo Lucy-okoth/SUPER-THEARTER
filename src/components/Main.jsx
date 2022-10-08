@@ -11,7 +11,7 @@ const Main = () => {
     const movie = movies[Math.random() * movies.length]
 
     useEffect (() => {
-      axios.get (requests.requestPopular).then ((response) => {
+      axios.get (requests.requestRating).then ((response) => {
         setMovies (response.data.results)
       });
 
